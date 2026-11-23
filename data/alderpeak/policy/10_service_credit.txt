@@ -1,0 +1,5 @@
+Source: DOC10
+Title: Service credit policy
+Store: policy
+
+If a Priority 1 incident lasts more than 4 hours, Growth and Scale customers may request a credit equal to 10 percent of that month's subscription. Email billing@alderpeak.example within 14 days of the incident. Starter customers are not eligible. This policy does not describe a particular outage.

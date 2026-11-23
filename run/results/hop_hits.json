@@ -1,0 +1,23 @@
+[
+  {
+    "doc_id": "DOC10",
+    "title": "Service credit policy",
+    "store": "policy",
+    "text": "If a Priority 1 incident lasts more than 4 hours, Growth and Scale customers may request a credit equal to 10 percent of that month's subscription. Email billing@alderpeak.example within 14 days of the incident. Starter customers are not eligible. This policy does not describe a particular outage.",
+    "score": 0.579
+  },
+  {
+    "doc_id": "DOC08",
+    "title": "Changing plans",
+    "store": "billing",
+    "text": "You can change Ticketly plans under Billing, then Plan. Upgrades take effect immediately. Downgrades take effect at the next renewal. Growth customers sometimes ask to claim a credit for unused seats, including when a downgrade is submitted on a Monday. Alderpeak does not issue that kind of credit. This page is not about service credits for an API outage.",
+    "score": 0.555
+  },
+  {
+    "doc_id": "DOC01",
+    "title": "Ticketly overview",
+    "store": "product",
+    "text": "Ticketly is Alderpeak's help desk. Teams share inboxes, use macros, and can turn on single sign-on. Ticketly also includes Flare, a live inbox activity feed, so teammates can see new tickets arrive. Teams can attach files to tickets. If a team is hitting a file cap, it is usually the 25 MB per-file size cap, not a plan storage pool. If you are a Growth customer and want to claim a credit for last Monday's API outage, this overview is not the right page. It does not list a credit amount, a duration, or plan prices.",
+    "score": 0.452
+  }
+]

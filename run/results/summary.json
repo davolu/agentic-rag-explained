@@ -1,0 +1,146 @@
+{
+  "naive": {
+    "n": 8,
+    "correct": 6,
+    "citation_ok": 7,
+    "accuracy": 0.75,
+    "citation_accuracy": 0.875,
+    "avg_latency_s": 1.075
+  },
+  "agentic": {
+    "n": 8,
+    "correct": 8,
+    "citation_ok": 8,
+    "accuracy": 1.0,
+    "citation_accuracy": 1.0,
+    "avg_latency_s": 7.523
+  },
+  "by_question": [
+    {
+      "id": "Q1",
+      "kind": "easy",
+      "naive_correct": true,
+      "agentic_correct": true,
+      "naive_latency_s": 0.717,
+      "agentic_latency_s": 7.482,
+      "naive_cites": [
+        "DOC04"
+      ],
+      "agentic_cites": [
+        "DOC04"
+      ]
+    },
+    {
+      "id": "Q2",
+      "kind": "easy",
+      "naive_correct": true,
+      "agentic_correct": true,
+      "naive_latency_s": 0.519,
+      "agentic_latency_s": 7.205,
+      "naive_cites": [
+        "DOC05"
+      ],
+      "agentic_cites": [
+        "DOC05"
+      ]
+    },
+    {
+      "id": "Q3",
+      "kind": "rewrite",
+      "naive_correct": false,
+      "agentic_correct": true,
+      "naive_latency_s": 1.585,
+      "agentic_latency_s": 3.72,
+      "naive_cites": [
+        "DOC03",
+        "DOC12"
+      ],
+      "agentic_cites": [
+        "DOC03",
+        "DOC06",
+        "DOC08",
+        "DOC12"
+      ]
+    },
+    {
+      "id": "Q4",
+      "kind": "routing",
+      "naive_correct": true,
+      "agentic_correct": true,
+      "naive_latency_s": 0.973,
+      "agentic_latency_s": 9.031,
+      "naive_cites": [
+        "DOC02",
+        "DOC05",
+        "DOC07"
+      ],
+      "agentic_cites": [
+        "DOC02",
+        "DOC07"
+      ]
+    },
+    {
+      "id": "Q5",
+      "kind": "multi-hop",
+      "naive_correct": false,
+      "agentic_correct": true,
+      "naive_latency_s": 2.009,
+      "agentic_latency_s": 10.008,
+      "naive_cites": [
+        "DOC01",
+        "DOC08",
+        "DOC10"
+      ],
+      "agentic_cites": [
+        "DOC05",
+        "DOC09",
+        "DOC10"
+      ]
+    },
+    {
+      "id": "Q6",
+      "kind": "easy",
+      "naive_correct": true,
+      "agentic_correct": true,
+      "naive_latency_s": 1.365,
+      "agentic_latency_s": 8.169,
+      "naive_cites": [
+        "DOC01",
+        "DOC08",
+        "DOC10"
+      ],
+      "agentic_cites": [
+        "DOC09",
+        "DOC10"
+      ]
+    },
+    {
+      "id": "Q7",
+      "kind": "abstain",
+      "naive_correct": true,
+      "agentic_correct": true,
+      "naive_latency_s": 0.827,
+      "agentic_latency_s": 6.412,
+      "naive_cites": [
+        "DOC05"
+      ],
+      "agentic_cites": [
+        "DOC05"
+      ]
+    },
+    {
+      "id": "Q8",
+      "kind": "easy",
+      "naive_correct": true,
+      "agentic_correct": true,
+      "naive_latency_s": 0.605,
+      "agentic_latency_s": 8.155,
+      "naive_cites": [
+        "DOC11"
+      ],
+      "agentic_cites": [
+        "DOC11"
+      ]
+    }
+  ]
+}

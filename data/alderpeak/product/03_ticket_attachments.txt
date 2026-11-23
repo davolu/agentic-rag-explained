@@ -1,0 +1,5 @@
+Source: DOC03
+Title: Ticket attachments
+Store: product
+
+Each Ticketly ticket can have file attachments. The maximum size of a single attachment is 25 MB. Teams sometimes say they have hit a file cap when a single file is rejected for being too large. That is a per-file size cap. It is not your workspace's storage pool, and this page does not describe plan storage.

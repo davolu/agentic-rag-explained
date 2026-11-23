@@ -1,0 +1,112 @@
+[
+  {
+    "id": "Q1",
+    "question": "How do I turn on SSO in Ticketly?",
+    "gold": "Open Settings, then Security, then Single sign-on. Ticketly supports SAML. Only workspace admins can enable it.",
+    "must_contain": [
+      "saml"
+    ],
+    "gold_docs": [
+      "DOC04"
+    ],
+    "kind": "easy"
+  },
+  {
+    "id": "Q2",
+    "question": "How many seats are included on the Growth plan?",
+    "gold": "The Growth plan includes 15 seats.",
+    "must_contain": [
+      "15"
+    ],
+    "gold_docs": [
+      "DOC05"
+    ],
+    "kind": "easy"
+  },
+  {
+    "id": "Q3",
+    "question": "Why is my team hitting the file cap on the pro plan?",
+    "gold": "The mid-tier plan is Growth, and its attachment storage pool is 50 GB. When that pool is full, new attachments are rejected.",
+    "must_contain": [
+      "50"
+    ],
+    "gold_docs": [
+      "DOC06"
+    ],
+    "kind": "rewrite"
+  },
+  {
+    "id": "Q4",
+    "question": "How much does Flare cost?",
+    "gold": "Flare, the live inbox feed, is included on every plan. Flare Reports, the weekly digest add-on, costs $29 per month.",
+    "must_contain": [
+      "29",
+      "included"
+    ],
+    "gold_docs": [
+      "DOC07",
+      "DOC02"
+    ],
+    "kind": "routing"
+  },
+  {
+    "id": "Q5",
+    "question": "What credit can a Growth customer claim for last Monday's API outage?",
+    "gold": "The outage was a Priority 1 incident lasting 6 hours, so a Growth customer may request a credit equal to 10 percent of that month's subscription.",
+    "must_contain": [
+      "10",
+      "6"
+    ],
+    "gold_docs": [
+      "DOC10",
+      "DOC09"
+    ],
+    "kind": "multi-hop"
+  },
+  {
+    "id": "Q6",
+    "question": "Who do I email to request a service credit, and how long do I have?",
+    "gold": "Email billing@alderpeak.example within 14 days of the incident.",
+    "must_contain": [
+      "billing@alderpeak.example",
+      "14"
+    ],
+    "gold_docs": [
+      "DOC10"
+    ],
+    "kind": "easy"
+  },
+  {
+    "id": "Q7",
+    "question": "What is the monthly price of the Enterprise plan?",
+    "gold": "Alderpeak does not offer an Enterprise plan. The top plan is Scale.",
+    "must_contain": [],
+    "accept_any": [
+      "does not",
+      "do not offer",
+      "don't offer",
+      "no enterprise",
+      "not offer",
+      "does not sell",
+      "do not sell",
+      "there is no"
+    ],
+    "gold_docs": [
+      "DOC05"
+    ],
+    "kind": "abstain",
+    "abstain_ok": true
+  },
+  {
+    "id": "Q8",
+    "question": "How long is customer data kept after an account is cancelled?",
+    "gold": "Alderpeak keeps customer ticket data for 90 days after cancellation, then deletes it.",
+    "must_contain": [
+      "90"
+    ],
+    "gold_docs": [
+      "DOC11"
+    ],
+    "kind": "easy"
+  }
+]

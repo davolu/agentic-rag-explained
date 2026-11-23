@@ -1,0 +1,5 @@
+Source: DOC12
+Title: File cap troubleshooting
+Store: product
+
+If your team is hitting a file cap, start here. When a single file is larger than 25 MB, Ticketly rejects it. People often call that a file cap. Check the file size first. This FAQ does not describe plan storage pools, and it does not mention the mid-tier plan.

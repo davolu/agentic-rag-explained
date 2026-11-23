@@ -1,0 +1,23 @@
+[
+  {
+    "doc_id": "DOC04",
+    "title": "Turn on SSO",
+    "store": "product",
+    "text": "To turn on SSO in Ticketly, open Settings, then Security, then Single sign-on. Ticketly supports SAML. Upload your identity provider metadata and map the email attribute. Only workspace admins can enable SSO.",
+    "score": 0.76
+  },
+  {
+    "doc_id": "DOC09",
+    "title": "Incident INC-214, Monday API outage",
+    "store": "policy",
+    "text": "Incident INC-214. On Monday 10 November, Ticketly's public API was unavailable from 15:00 to 21:00 UTC. Duration: 6 hours. Severity: Priority 1. Status: resolved. This status note does not state any service credit amount.",
+    "score": 0.423
+  },
+  {
+    "doc_id": "DOC01",
+    "title": "Ticketly overview",
+    "store": "product",
+    "text": "Ticketly is Alderpeak's help desk. Teams share inboxes, use macros, and can turn on single sign-on. Ticketly also includes Flare, a live inbox activity feed, so teammates can see new tickets arrive. Teams can attach files to tickets. If a team is hitting a file cap, it is usually the 25 MB per-file size cap, not a plan storage pool. If you are a Growth customer and want to claim a credit for last Monday's API outage, this overview is not the right page. It does not list a credit amount, a duration, or plan prices.",
+    "score": 0.39
+  }
+]

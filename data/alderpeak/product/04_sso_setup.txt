@@ -1,0 +1,5 @@
+Source: DOC04
+Title: Turn on SSO
+Store: product
+
+To turn on SSO in Ticketly, open Settings, then Security, then Single sign-on. Ticketly supports SAML. Upload your identity provider metadata and map the email attribute. Only workspace admins can enable SSO.
