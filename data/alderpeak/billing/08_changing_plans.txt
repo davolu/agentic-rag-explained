@@ -1,0 +1,5 @@
+Source: DOC08
+Title: Changing plans
+Store: billing
+
+You can change Ticketly plans under Billing, then Plan. Upgrades take effect immediately. Downgrades take effect at the next renewal. Growth customers sometimes ask to claim a credit for unused seats, including when a downgrade is submitted on a Monday. Alderpeak does not issue that kind of credit. This page is not about service credits for an API outage.

@@ -1,0 +1,256 @@
+[
+  {
+    "id": "Q1",
+    "kind": "easy",
+    "question": "How do I turn on SSO in Ticketly?",
+    "gold": "Open Settings, then Security, then Single sign-on. Ticketly supports SAML. Only workspace admins can enable it.",
+    "naive": {
+      "id": "Q1",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 0.717,
+      "citations": [
+        "DOC04"
+      ],
+      "answer": "To turn on SSO in Ticketly, open Settings, then Security, then Single sign-on [DOC04]. Ticketly supports SAML, so you upload your identity provider metadata and map the email attribute [DOC04]. Only workspace admins can enable SSO [DOC04].",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q1",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 7.482,
+      "citations": [
+        "DOC04"
+      ],
+      "answer": "To turn on SSO in Ticketly, open Settings, then Security, then Single sign-on [DOC04]. Ticketly supports SAML, so upload your identity provider metadata and map the email attribute [DOC04]. Only workspace admins can enable SSO [DOC04].",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q2",
+    "kind": "easy",
+    "question": "How many seats are included on the Growth plan?",
+    "gold": "The Growth plan includes 15 seats.",
+    "naive": {
+      "id": "Q2",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 0.519,
+      "citations": [
+        "DOC05"
+      ],
+      "answer": "The Growth plan includes 15 seats and costs $99 per month [DOC05]. Growth is the mid-tier plan that most teams choose [DOC05].",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q2",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 7.205,
+      "citations": [
+        "DOC05"
+      ],
+      "answer": "The Growth plan includes 15 seats and costs $99 per month [DOC05]. Growth is the mid-tier plan most teams choose [DOC05].",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q3",
+    "kind": "rewrite",
+    "question": "Why is my team hitting the file cap on the pro plan?",
+    "gold": "The mid-tier plan is Growth, and its attachment storage pool is 50 GB. When that pool is full, new attachments are rejected.",
+    "naive": {
+      "id": "Q3",
+      "kind": "rewrite",
+      "correct": false,
+      "citation_ok": false,
+      "latency_s": 1.585,
+      "citations": [
+        "DOC03",
+        "DOC12"
+      ],
+      "answer": "The evidence points to a per-file size limit rather than a team-wide storage limit. Ticketly rejects any single attachment larger than 25 MB, and teams often describe that rejection as hitting a \"file cap\" [DOC03][DOC12]. The first thing to check is the size of the file being rejected [DOC12].\n\nThe documents do not explain whether the Pro plan has a storage pool or total file allowance, so I can't say whether your team is hitting a plan-level limit. The provided material says the 25 MB cap is per file and is not your workspace's storage pool, and that these pages do not describe plan storage [DOC03][DOC12]. For plan limits, you would need to check Alderpeak's plan documentation or contact their support team.",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q3",
+      "kind": "rewrite",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 3.72,
+      "citations": [
+        "DOC03",
+        "DOC06",
+        "DOC08",
+        "DOC12"
+      ],
+      "answer": "I can't tell from these documents exactly which limit your team is hitting, and I don't know what your plan's storage pool size is for \"the pro plan,\" since Ticketly's plans are named Starter, Growth, and Scale rather than \"pro.\"\n\nHere is what the documents do say:\n\n- A single attachment larger than 25 MB is rejected. Teams often describe this as a file cap, and the troubleshooting guide says to check the file size first [DOC12][DOC03].\n- Separately, each plan has a workspace attachment storage pool: Starter 5 GB, Growth 50 GB, and Scale 500 GB. When the pool is full, new attachments are rejected until you delete older attachments or change plan [DOC06].\n\nSo if your team is hitting a limit, it is either one oversized file (over 25 MB) or the total pool for your plan being full. If the rejected files are individually under 25 MB, the pool is the more likely cause. You can check your current plan under Billing, then Plan, and review attachments to see how much space is used [DOC08][DOC06]. Changing plans is also done there, with upgrades taking effect immediately [DOC08].",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q4",
+    "kind": "routing",
+    "question": "How much does Flare cost?",
+    "gold": "Flare, the live inbox feed, is included on every plan. Flare Reports, the weekly digest add-on, costs $29 per month.",
+    "naive": {
+      "id": "Q4",
+      "kind": "routing",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 0.973,
+      "citations": [
+        "DOC02",
+        "DOC05",
+        "DOC07"
+      ],
+      "answer": "Flare itself has no separate price: it is included on every Ticketly plan [DOC02]. The documents do not list a separate price for Flare beyond that, so the cost is whatever your Ticketly plan costs. Those plans are Starter at $29 per month with 3 seats, Growth at $99 per month with 15 seats, and Scale at $249 per month with 50 seats [DOC05].\n\nNote that Flare Reports is a different, paid add-on at $29 per month on top of your Ticketly plan, and it is not the same as Flare [DOC07].",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q4",
+      "kind": "routing",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 9.031,
+      "citations": [
+        "DOC02",
+        "DOC07"
+      ],
+      "answer": "The documents don't give a price for Flare. [DOC02] states that Flare, the live inbox activity feed, is included on every Ticketly plan and explicitly says the page does not list a price.\n\nThe only paid item mentioned that is similar in name is Flare Reports, which [DOC07] says costs $29 per month on top of your Ticketly plan. That is a separate add-on that emails a weekly analytics digest to workspace admins, not the live inbox feed.",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q5",
+    "kind": "multi-hop",
+    "question": "What credit can a Growth customer claim for last Monday's API outage?",
+    "gold": "The outage was a Priority 1 incident lasting 6 hours, so a Growth customer may request a credit equal to 10 percent of that month's subscription.",
+    "naive": {
+      "id": "Q5",
+      "kind": "multi-hop",
+      "correct": false,
+      "citation_ok": true,
+      "latency_s": 2.009,
+      "citations": [
+        "DOC01",
+        "DOC08",
+        "DOC10"
+      ],
+      "answer": "The provided documents do not describe last Monday's API outage, so I can't confirm whether it qualifies or how long it lasted.\n\nWhat the documents do say is that under the service credit policy [DOC10], Growth and Scale customers may request a credit equal to 10 percent of that month's subscription if a Priority 1 incident lasts more than 4 hours. To request it, you email billing@alderpeak.example within 14 days of the incident. The policy notes it does not describe a particular outage, so it doesn't confirm that last Monday's outage was a Priority 1 incident lasting over 4 hours.\n\nThe documents do not say whether the outage meets those criteria, so I don't know whether you would be eligible for the credit. The billing page on plan changes [DOC08] covers unused-seat credits for downgrades, which Alderpeak does not issue, so it doesn't apply to an outage. The product overview [DOC01] doesn't address credits either.\n\nTo find out whether last Monday's outage was a Priority 1 incident and how long it lasted, you would need to contact billing@alderpeak.example or check Alderpeak's incident records, which aren't included here.",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q5",
+      "kind": "multi-hop",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 10.008,
+      "citations": [
+        "DOC05",
+        "DOC09",
+        "DOC10"
+      ],
+      "answer": "A Growth customer may be eligible under the service credit policy, but the documents do not state the exact credit amount for last Monday's outage.\n\nThe policy says that if a Priority 1 incident lasts more than 4 hours, Growth and Scale customers may request a credit equal to 10 percent of that month's subscription [DOC10]. Last Monday's API outage was recorded as Priority 1 and lasted 6 hours, from 15:00 to 21:00 UTC on 10 November [DOC09]. That meets the duration threshold.\n\nTo request it, email billing@alderpeak.example within 14 days of the incident [DOC10]. The status note for the incident does not state any service credit amount [DOC09], and the documents do not give the Growth plan's monthly subscription figure in a way that lets me calculate the exact dollar value for your account beyond the list price of $99 per month for Growth [DOC05]. Any final amount would need to be confirmed by Alderpeak billing.",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q6",
+    "kind": "easy",
+    "question": "Who do I email to request a service credit, and how long do I have?",
+    "gold": "Email billing@alderpeak.example within 14 days of the incident.",
+    "naive": {
+      "id": "Q6",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 1.365,
+      "citations": [
+        "DOC01",
+        "DOC08",
+        "DOC10"
+      ],
+      "answer": "You email billing@alderpeak.example, and you must do so within 14 days of the incident [DOC10]. This applies to Growth and Scale customers when a Priority 1 incident lasts more than 4 hours, and the credit is 10 percent of that month's subscription [DOC10]. Starter customers are not eligible [DOC10].\n\nThe evidence does not confirm whether last Monday's API outage was a Priority 1 incident lasting more than 4 hours, so I can't tell you whether that specific outage qualifies. The policy document also states it does not describe a particular outage [DOC10]. The overview and billing pages don't cover this either [DOC01][DOC08]. Note that Alderpeak does not issue credits for unused seats after a plan downgrade [DOC08], which is a different situation from an outage credit.",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q6",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 8.169,
+      "citations": [
+        "DOC09",
+        "DOC10"
+      ],
+      "answer": "Email billing@alderpeak.example to request a service credit, and do so within 14 days of the incident [DOC10].\n\nThe credit policy applies to a Priority 1 incident lasting more than 4 hours, and only for Growth and Scale customers, who may request a credit equal to 10 percent of that month's subscription [DOC10]. The Monday API outage (INC-214) was a Priority 1 incident lasting 6 hours, so it meets the duration threshold [DOC09]. However, the documents do not confirm whether you are eligible for a credit for that specific outage, and the status note for INC-214 does not state any credit amount [DOC09]. Because the 14-day window runs from the incident date, and the outage was on Monday 10 November, you should send your request promptly. I do not know the exact deadline date beyond that 14-day rule, since the documents do not state when the window closes for your account.",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q7",
+    "kind": "abstain",
+    "question": "What is the monthly price of the Enterprise plan?",
+    "gold": "Alderpeak does not offer an Enterprise plan. The top plan is Scale.",
+    "naive": {
+      "id": "Q7",
+      "kind": "abstain",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 0.827,
+      "citations": [
+        "DOC05"
+      ],
+      "answer": "There is no Enterprise plan. The document chunks state that Ticketly has three plans: Starter, Growth, and Scale, and that Alderpeak does not sell an Enterprise plan [DOC05]. So I can't give a monthly price for it.\n\nFor reference, the monthly prices of the plans that do exist are $29 for Starter, $99 for Growth, and $249 for Scale [DOC05].",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q7",
+      "kind": "abstain",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 6.412,
+      "citations": [
+        "DOC05"
+      ],
+      "answer": "I do not know the monthly price of an Enterprise plan, because the provided documents state that Alderpeak does not sell an Enterprise plan [DOC05]. The three plans offered are Starter at $29 per month with 3 seats, Growth at $99 per month with 15 seats, and Scale at $249 per month with 50 seats [DOC05].",
+      "steps": []
+    }
+  },
+  {
+    "id": "Q8",
+    "kind": "easy",
+    "question": "How long is customer data kept after an account is cancelled?",
+    "gold": "Alderpeak keeps customer ticket data for 90 days after cancellation, then deletes it.",
+    "naive": {
+      "id": "Q8",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 0.605,
+      "citations": [
+        "DOC11"
+      ],
+      "answer": "After an account is cancelled, Alderpeak keeps customer ticket data for 90 days, then deletes it [DOC11]. You can request an export before cancellation [DOC11].",
+      "steps": []
+    },
+    "agentic": {
+      "id": "Q8",
+      "kind": "easy",
+      "correct": true,
+      "citation_ok": true,
+      "latency_s": 8.155,
+      "citations": [
+        "DOC11"
+      ],
+      "answer": "After an account is cancelled, Alderpeak keeps customer ticket data for 90 days, then deletes it. You can request an export before cancellation. [DOC11]",
+      "steps": []
+    }
+  }
+]

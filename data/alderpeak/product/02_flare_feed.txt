@@ -1,0 +1,5 @@
+Source: DOC02
+Title: Flare, the live inbox feed
+Store: product
+
+Flare is Ticketly's live inbox activity feed. It shows when teammates are typing and highlights new tickets as they arrive. Flare is included on every Ticketly plan. Flare does not change the file cap. If your team is hitting a file cap, see the attachments guide. This page is about the product feature, not billing, and it does not list a price.

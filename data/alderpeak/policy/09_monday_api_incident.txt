@@ -1,0 +1,5 @@
+Source: DOC09
+Title: Incident INC-214, Monday API outage
+Store: policy
+
+Incident INC-214. On Monday 10 November, Ticketly's public API was unavailable from 15:00 to 21:00 UTC. Duration: 6 hours. Severity: Priority 1. Status: resolved. This status note does not state any service credit amount.

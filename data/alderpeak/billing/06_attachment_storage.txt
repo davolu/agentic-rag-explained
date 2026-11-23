@@ -1,0 +1,5 @@
+Source: DOC06
+Title: Attachment storage
+Store: billing
+
+Each plan has an attachment storage pool: Starter 5 GB, Growth 50 GB, and Scale 500 GB. When the pool is full, new attachments are rejected until you delete older attachments or change plan. This page describes the workspace storage pool, not the per-attachment size limit.

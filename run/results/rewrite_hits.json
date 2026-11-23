@@ -1,0 +1,23 @@
+[
+  {
+    "doc_id": "DOC12",
+    "title": "File cap troubleshooting",
+    "store": "product",
+    "text": "If your team is hitting a file cap, start here. When a single file is larger than 25 MB, Ticketly rejects it. People often call that a file cap. Check the file size first. This FAQ does not describe plan storage pools, and it does not mention the mid-tier plan.",
+    "score": 0.637
+  },
+  {
+    "doc_id": "DOC03",
+    "title": "Ticket attachments",
+    "store": "product",
+    "text": "Each Ticketly ticket can have file attachments. The maximum size of a single attachment is 25 MB. Teams sometimes say they have hit a file cap when a single file is rejected for being too large. That is a per-file size cap. It is not your workspace's storage pool, and this page does not describe plan storage.",
+    "score": 0.51
+  },
+  {
+    "doc_id": "DOC01",
+    "title": "Ticketly overview",
+    "store": "product",
+    "text": "Ticketly is Alderpeak's help desk. Teams share inboxes, use macros, and can turn on single sign-on. Ticketly also includes Flare, a live inbox activity feed, so teammates can see new tickets arrive. Teams can attach files to tickets. If a team is hitting a file cap, it is usually the 25 MB per-file size cap, not a plan storage pool. If you are a Growth customer and want to claim a credit for last Monday's API outage, this overview is not the right page. It does not list a credit amount, a duration, or plan prices.",
+    "score": 0.413
+  }
+]

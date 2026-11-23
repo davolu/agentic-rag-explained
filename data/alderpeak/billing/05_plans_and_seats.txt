@@ -1,0 +1,5 @@
+Source: DOC05
+Title: Plans and seats
+Store: billing
+
+Ticketly has three plans. Starter includes 3 seats and costs $29 per month. Growth includes 15 seats and costs $99 per month. Growth is the mid-tier plan most teams choose. Scale includes 50 seats and costs $249 per month. Scale is the top tier. Alderpeak does not sell an Enterprise plan, and does not offer a lifetime plan.

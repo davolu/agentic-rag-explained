@@ -1,0 +1,5 @@
+Source: DOC11
+Title: Data retention after cancellation
+Store: policy
+
+After an account is cancelled, Alderpeak keeps customer ticket data for 90 days, then deletes it. You can request an export before cancellation.

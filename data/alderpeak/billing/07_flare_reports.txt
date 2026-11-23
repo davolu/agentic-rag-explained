@@ -1,0 +1,5 @@
+Source: DOC07
+Title: Flare Reports add-on
+Store: billing
+
+Flare Reports is a paid add-on. It emails a weekly analytics digest to workspace admins. Flare Reports costs $29 per month, on top of your Ticketly plan. It is not the same thing as Flare, the live inbox activity feed.
